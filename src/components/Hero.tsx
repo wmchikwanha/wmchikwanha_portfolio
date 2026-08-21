@@ -5,17 +5,17 @@ import { PERSONAL_INFO, LINKS, HERO_IMAGE } from "../constants";
 
 export default function Hero() {
   return (
-    <div className="relative min-h-[50vh] md:min-h-[90vh] flex items-start md:items-center justify-center pt-16 md:pt-32 pb-8 md:pb-20 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-start md:items-center">
+    <div className="relative flex items-start justify-center pt-28 md:pt-36 pb-10 md:pb-16 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-start">
          
-         {/* Left: Bio & Image Container */}
-         <div className="md:col-span-4 flex flex-col gap-6 md:gap-8">
-           <motion.div
-             initial={{ opacity: 0, scale: 0.95 }}
-             animate={{ opacity: 1, scale: 1 }}
-             transition={{ duration: 0.8 }}
-             className="bg-ivory p-1 rounded-sm shadow-2xl relative group order-last md:order-first"
-           >
+        {/* Left on desktop, 2nd on mobile: Photo, Quote & Direct Inquiry */}
+        <div className="order-2 md:order-1 md:col-span-4 flex flex-col gap-6 md:gap-8">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
+            className="bg-ivory p-1 rounded-sm shadow-2xl relative group"
+          >
             <div className="aspect-[4/3] md:aspect-[4/5] overflow-hidden bg-navy">
               <img 
                 src={HERO_IMAGE} 
@@ -36,34 +36,34 @@ export default function Hero() {
             </p>
           </motion.div>
 
-          <div className="mt-auto pt-8">
-            <p className="text-[10px] uppercase tracking-widest text-gold mb-2 font-bold">Direct Inquiry</p>
-            <p className="text-xl md:text-2xl font-medium tracking-tight">{PERSONAL_INFO.email}</p>
+          <div className="pt-4 border-t border-white/10 md:border-t-0 md:pt-2">
+            <p className="text-[10px] uppercase tracking-widest text-gold mb-1 font-bold">Direct Inquiry</p>
+            <p className="text-lg md:text-2xl font-medium tracking-tight break-all">{PERSONAL_INFO.email}</p>
           </div>
         </div>
 
-        {/* Right: Main Headline & Intro */}
-        <div className="md:col-span-8 flex flex-col justify-center space-y-12">
+        {/* Right on desktop, 1st on mobile: Main Headline & Intro */}
+        <div className="order-1 md:order-2 md:col-span-8 flex flex-col space-y-8 md:space-y-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            <h1 className="text-3xl sm:text-5xl md:text-8xl font-extrabold leading-[0.9] tracking-tighter mb-6 md:mb-8 block uppercase">
+            <h1 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold leading-[0.95] md:leading-[0.9] tracking-tighter mb-4 md:mb-6 block uppercase">
               {PERSONAL_INFO.heroHeadline.line1}<br />
               {PERSONAL_INFO.heroHeadline.line2}<br />
               <span className="text-gold">{PERSONAL_INFO.heroHeadline.highlight}</span>
             </h1>
             
-            <p className="max-w-2xl text-lg md:text-xl text-ivory/70 font-light leading-relaxed">
+            <p className="max-w-2xl text-base md:text-lg lg:text-xl text-ivory/80 font-light leading-relaxed">
               {PERSONAL_INFO.heroSubheadline}
             </p>
           </motion.div>
 
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-3 md:gap-4">
             <a
               href="#platforms"
-              className="px-10 py-4 bg-gold text-navy font-black rounded-sm active:scale-95 transition-all text-xs uppercase tracking-widest"
+              className="px-8 md:px-10 py-3.5 md:py-4 bg-gold text-navy font-black rounded-sm active:scale-95 transition-all text-xs uppercase tracking-widest text-center"
             >
               Explore Solutions
             </a>
@@ -71,32 +71,34 @@ export default function Hero() {
               <a 
                 href={LINKS.linkedin} 
                 target="_blank" 
-                className="p-4 border border-gold/30 rounded-sm hover:bg-gold/10 transition-all text-xs font-bold uppercase tracking-widest"
+                rel="noreferrer"
+                className="px-4 py-3.5 md:py-4 border border-gold/30 rounded-sm hover:bg-gold/10 transition-all text-xs font-bold uppercase tracking-widest text-center"
               >
                 LinkedIn
               </a>
               <a 
                 href={LINKS.syllixOne} 
                 target="_blank" 
-                className="p-4 border border-gold/30 rounded-sm hover:bg-gold/10 transition-all text-xs font-bold uppercase tracking-widest"
+                rel="noreferrer"
+                className="px-4 py-3.5 md:py-4 border border-gold/30 rounded-sm hover:bg-gold/10 transition-all text-xs font-bold uppercase tracking-widest text-center"
               >
                 Syllix-One
               </a>
             </div>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 pt-8 md:pt-12 border-t border-white/10">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 pt-6 md:pt-8 border-t border-white/10">
             <div>
               <p className="text-xs font-bold uppercase tracking-widest text-gold mb-1">Entity</p>
-              <p className="text-sm opacity-60">Syllix-One Group</p>
+              <p className="text-sm opacity-70">Syllix-One Group</p>
             </div>
             <div>
               <p className="text-xs font-bold uppercase tracking-widest text-gold mb-1">Focus</p>
-              <p className="text-sm opacity-60">AI Literacy & Inclusion</p>
+              <p className="text-sm opacity-70">AI Literacy & Inclusion</p>
             </div>
-            <div className="hidden md:block">
+            <div className="col-span-2 md:col-span-1">
               <p className="text-xs font-bold uppercase tracking-widest text-gold mb-1">Location</p>
-              <p className="text-sm opacity-60">{PERSONAL_INFO.location}</p>
+              <p className="text-sm opacity-70">{PERSONAL_INFO.location}</p>
             </div>
           </div>
         </div>

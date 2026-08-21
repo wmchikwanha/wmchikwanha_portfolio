@@ -43,31 +43,31 @@ export default function App() {
           <Hero />
         </section>
 
-        <section id="about" className="py-12 md:py-32">
+        <section id="about" className="py-12 md:py-20">
           <About />
         </section>
 
-        <section id="experience" className="bg-navy-light/30 py-12 md:py-32">
+        <section id="experience" className="bg-navy-light/30 py-12 md:py-20">
           <Experience />
         </section>
 
-        <section id="education" className="py-12 md:py-32">
+        <section id="education" className="py-12 md:py-20">
           <Education />
         </section>
 
-        <section id="platforms" className="bg-navy-light/30 py-12 md:py-32">
+        <section id="platforms" className="bg-navy-light/30 py-12 md:py-20">
           <Platforms />
         </section>
 
-        <section id="books" className="bg-navy-light/30 py-12 md:py-32">
+        <section id="books" className="bg-navy-light/30 py-12 md:py-20">
           <Books />
         </section>
 
-        <section id="skills" className="py-12 md:py-32">
+        <section id="skills" className="py-12 md:py-20">
           <Skills />
         </section>
 
-        <section id="contact" className="bg-navy-light/30 py-12 md:py-32">
+        <section id="contact" className="bg-navy-light/30 py-12 md:py-20">
           <Contact />
         </section>
       </main>

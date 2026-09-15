@@ -35,7 +35,7 @@ export default function Platforms() {
         <div className="lg:col-span-8 flex flex-col gap-12">
           <div className="border-b border-white/10 pb-6">
             <h2 className="text-gold text-[10px] font-bold uppercase tracking-micro">Digital Ecosystem</h2>
-            <p className="text-2xl md:text-3xl font-bold tracking-tight mt-2">Specialized AI Systems</p>
+            <p className="text-2xl md:text-3xl font-bold tracking-tight mt-2">Specialised AI Systems</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-4">

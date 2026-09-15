@@ -94,7 +94,7 @@ export default function Hero() {
             </div>
             <div>
               <p className="text-xs font-bold uppercase tracking-widest text-gold mb-1">Focus</p>
-              <p className="text-sm opacity-70">AI Literacy & Inclusion</p>
+              <p className="text-sm opacity-70">Solutions Development, AI Literacy & Inclusion</p>
             </div>
             <div className="col-span-2 md:col-span-1">
               <p className="text-xs font-bold uppercase tracking-widest text-gold mb-1">Location</p>

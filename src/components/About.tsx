@@ -16,7 +16,7 @@ export default function About() {
           </h2>
           <div className="w-20 h-1 bg-gold mb-8" />
           <p className="text-gold font-medium uppercase tracking-[0.2em] text-xs">
-            Expertise in AI & Education
+            Expertise in Health & Education Technology
           </p>
         </motion.div>
       </div>
@@ -40,7 +40,7 @@ export default function About() {
           className="text-ivory/70 space-y-6 font-light leading-loose text-lg"
         >
           <p>
-            Originator and developer of TandemLearn, a Southern African inclusive education platform providing real-time speech-to-text transcription, Zimbabwean Sign Language overlays, and AI-powered personalised learning for deaf, hard-of-hearing, and neurodiverse students.
+            Mental health and education specialist with over a decade of frontline psycho-social and academic experience, now focused on AI governance, product strategy, and rapid AI-assisted prototyping for underserved African populations. Directs the design of clinical decision-support concepts and inclusive learning tools for culturally and linguistically diverse communities, translating domain expertise into working prototypes through AI-assisted, no-code development environments. Combines frontline mental health practice with formal AI ethics and governance training to build safety-first, culturally grounded digital tools. Specialist in multilingual health informatics, trauma-informed design, and regulatory alignment for decision support software and education compliance frameworks.
           </p>
           <p>
             Experienced in offline-first architecture, multilingual NLP, grant-ready impact measurement, and culturally adaptive instructional design. Postgraduate-qualified across education, mental health, and counselling from leading Australian universities.
@@ -48,12 +48,12 @@ export default function About() {
           
           <div className="grid grid-cols-2 gap-8 pt-8">
             <div>
-              <h4 className="text-gold font-bold text-3xl mb-1">25+</h4>
+              <h4 className="text-gold font-bold text-3xl mb-1">15+</h4>
               <p className="text-xs uppercase tracking-widest opacity-60">Published Books</p>
             </div>
             <div>
               <h4 className="text-gold font-bold text-3xl mb-1">6+</h4>
-              <p className="text-xs uppercase tracking-widest opacity-60">AI Platforms Built</p>
+              <p className="text-xs uppercase tracking-widest opacity-60">AI-Augmented Platforms Built</p>
             </div>
           </div>
         </motion.div>

@@ -23,7 +23,7 @@ export const PERSONAL_INFO = {
 export const LINKS = {
   linkedin: "https://www.linkedin.com/in/walter-c-0731bb209/",
   syllixOne: "https://syllix-one.com",
-  stratedgeLearn: "https://stratedgelearn.com",
+  stratedgeLearn: "https://stratedgelearn.site",
   stratedgeWorks: "https://sites.google.com/view/stratedgelearn/published-works",
   amazonStore: "https://www.amazon.com/s?k=stratedge+publishing",
   snapplifyStore: "https://shop.snapplify.com/search?term=STRATEDGE",
@@ -57,8 +57,8 @@ export const PLATFORMS = [
   {
     name: "LexAfrika AI",
     type: "LegalTech",
-    description: "Legal intelligence platform streamlining access to African legal frameworks and case law.",
-    link: "https://Lexafrika-ai.lovable.app"
+    description: "Legal intelligence tool turning statute, customary law and regional human-rights instruments into actionable, verifiable guidance for African citizens.",
+    link: "https://lexafrika-legal-ie.lovable.app"
   },
   {
     name: "Ubuntu Cross Border",
@@ -70,13 +70,19 @@ export const PLATFORMS = [
     name: "StratedgeOS ERP",
     type: "Enterprise Resource Planning",
     description: "An all-in-one ERP delivering enterprise-grade functionality that unifies CRM, finance, HR, procurement, project operations, and analytics.",
-    link: "https://stratedgeos-crm.lovable.app"
+    link: "https://erp-os-project.lovable.app"
   },
   {
     name: "Tengesa4Profit",
     type: "MicroFinTech",
     description: "Financial management and profitability tool for small business owners and micro-entrepreneurs.",
     link: "https://tengesa-4-profit.lovable.app"
+  },
+  {
+    name: "KudzidzisAI",
+    type: "Tertiary EduTech",
+    description: "Redesign tertiary assessments for the AI era. Transform questions into three defensible variants (AI-Assisted, Limited, Resistant) and generate formal Faculty AI Governance Logs.",
+    link: "https://ai-exam-adapt.lovable.app"
   }
 ];
 
@@ -104,14 +110,14 @@ export const EXPERIENCE = [
     company: "Syllix-One / Stratedge Learning & Publishing",
     period: "Dec 2024 – Present",
     location: "Harare, Zimbabwe",
-    description: "Delivering AI platforms and digital transformation advisory. Built 6+ production-ready platforms including Nzwisiso, LexAfrika AI, and Ubuntu Cross Border.",
+    description: "Delivering AI platforms and digital transformation advisory. Built 6+ production-ready platforms including Nzwisiso, TandemLearn, KudzidzisAI, LexAfrika AI, and Ubuntu Cross Border.",
   },
   {
     title: "Originator & Developer",
     company: "StratedgeAI",
     period: "2024 – Present",
     location: "Harare, Zimbabwe",
-    description: "TandemLearn: Multimodal, agentic EdTech platform for inclusive classrooms in Southern Africa. Features include live speech-to-text, Sign Language overlays, and multilingual UI.",
+    description: "Multimodal, agentic EdTech, DigiHealth, and SME business platforms for inclusive classrooms, culturally-aligned mental health and contextually-aware supply chain tooling  in Southern Africa.",
     },
   {
     title: "Business Development Consultant",

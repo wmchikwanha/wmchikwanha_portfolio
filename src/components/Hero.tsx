@@ -9,15 +9,23 @@ export default function Hero() {
     e.preventDefault();
     const target = document.getElementById("platforms");
     if (target) {
-      const navElement = document.querySelector("nav");
-      const navHeight = navElement ? navElement.offsetHeight : 80;
-      const targetTop = target.getBoundingClientRect().top + window.pageYOffset;
-      window.scrollTo({
-        top: Math.max(0, targetTop - navHeight - 16),
-        behavior: "smooth"
-      });
-      if (window.history.pushState) {
-        window.history.pushState(null, "", "#platforms");
+      try {
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+      } catch {
+        const navElement = document.querySelector("nav");
+        const navHeight = navElement ? navElement.offsetHeight : 80;
+        const targetTop = target.getBoundingClientRect().top + (window.pageYOffset || window.scrollY || 0);
+        window.scrollTo({
+          top: Math.max(0, targetTop - navHeight - 16),
+          behavior: "smooth"
+        });
+      }
+      try {
+        if (window.history && window.history.pushState) {
+          window.history.pushState(null, "", "#platforms");
+        }
+      } catch {
+        // Ignore SecurityError in sandboxed iframes
       }
     }
   };

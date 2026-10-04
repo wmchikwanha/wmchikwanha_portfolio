@@ -39,35 +39,36 @@ export default function App() {
       <Navbar />
       
       <main>
-        <section id="home">
+        <section id="home" className="scroll-mt-24 md:scroll-mt-28">
           <Hero />
         </section>
 
-        <section id="about" className="py-12 md:py-20">
+        <section id="about" className="py-12 md:py-20 scroll-mt-24 md:scroll-mt-28">
           <About />
         </section>
 
-        <section id="experience" className="bg-navy-light/30 py-12 md:py-20">
+        <section id="experience" className="bg-navy-light/30 py-12 md:py-20 scroll-mt-24 md:scroll-mt-28">
           <Experience />
         </section>
 
-        <section id="education" className="py-12 md:py-20">
+        <section id="education" className="py-12 md:py-20 scroll-mt-24 md:scroll-mt-28">
           <Education />
         </section>
 
-        <section id="platforms" className="bg-navy-light/30 py-12 md:py-20">
+        <section id="platforms" className="bg-navy-light/30 py-12 md:py-20 scroll-mt-24 md:scroll-mt-28">
           <Platforms />
         </section>
 
-        <section id="books" className="bg-navy-light/30 py-12 md:py-20">
+        <section id="publications" className="bg-navy-light/30 py-12 md:py-20 scroll-mt-24 md:scroll-mt-28 relative">
+          <span id="books" className="sr-only scroll-mt-24 md:scroll-mt-28" />
           <Books />
         </section>
 
-        <section id="skills" className="py-12 md:py-20">
+        <section id="skills" className="py-12 md:py-20 scroll-mt-24 md:scroll-mt-28">
           <Skills />
         </section>
 
-        <section id="contact" className="bg-navy-light/30 py-12 md:py-20">
+        <section id="contact" className="bg-navy-light/30 py-12 md:py-20 scroll-mt-24 md:scroll-mt-28">
           <Contact />
         </section>
       </main>

@@ -1,14 +1,32 @@
+import React from "react";
 import { motion } from "motion/react";
 import { ArrowRight, Linkedin, Globe } from "lucide-react";
 
 import { PERSONAL_INFO, LINKS, HERO_IMAGE } from "../constants";
 
 export default function Hero() {
+  const handleExploreClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const target = document.getElementById("platforms");
+    if (target) {
+      const navElement = document.querySelector("nav");
+      const navHeight = navElement ? navElement.offsetHeight : 80;
+      const targetTop = target.getBoundingClientRect().top + window.pageYOffset;
+      window.scrollTo({
+        top: Math.max(0, targetTop - navHeight - 16),
+        behavior: "smooth"
+      });
+      if (window.history.pushState) {
+        window.history.pushState(null, "", "#platforms");
+      }
+    }
+  };
+
   return (
     <div className="relative flex items-start justify-center pt-28 md:pt-36 pb-10 md:pb-16 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-start">
          
-        {/* Left on desktop, 2nd on mobile: Photo, Quote & Direct Inquiry */}
+        {/* Left on desktop, 2nd on mobile: Photo, Quote & Direct Enquiry */}
         <div className="order-2 md:order-1 md:col-span-4 flex flex-col gap-6 md:gap-8">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
@@ -63,7 +81,8 @@ export default function Hero() {
           <div className="flex flex-wrap gap-3 md:gap-4">
             <a
               href="#platforms"
-              className="px-8 md:px-10 py-3.5 md:py-4 bg-gold text-navy font-black rounded-sm active:scale-95 transition-all text-xs uppercase tracking-widest text-center"
+              onClick={handleExploreClick}
+              className="px-8 md:px-10 py-3.5 md:py-4 bg-gold text-navy font-black rounded-sm active:scale-95 transition-all text-xs uppercase tracking-widest text-center cursor-pointer"
             >
               Explore Solutions
             </a>
@@ -83,6 +102,14 @@ export default function Hero() {
                 className="px-4 py-3.5 md:py-4 border border-gold/30 rounded-sm hover:bg-gold/10 transition-all text-xs font-bold uppercase tracking-widest text-center"
               >
                 Syllix-One
+              </a>
+              <a 
+                href={LINKS.stratedgeLearn} 
+                target="_blank" 
+                rel="noreferrer"
+                className="px-4 py-3.5 md:py-4 border border-gold/30 rounded-sm hover:bg-gold/10 transition-all text-xs font-bold uppercase tracking-widest text-center"
+              >
+                StratedgeLearn
               </a>
             </div>
           </div>

@@ -17,6 +17,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
     background-color: #001F3F;
     min-height: 100%;
   }

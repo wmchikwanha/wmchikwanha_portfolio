@@ -7,7 +7,7 @@ export const PERSONAL_INFO = {
   name: "Walter M. Chikwanha",
   firstName: "Walter M.",
   lastName: "Chikwanha",
-  email: "wmchikwanha@gmail.com",
+  email: "service@syllix-one.com AND wmchikwanha@gmail.com",
   phone: "+263 780 688 079",
   location: "Harare, Zimbabwe",
   tagline: "Consultant • Author • AI Strategist • Founder",
@@ -22,8 +22,8 @@ export const PERSONAL_INFO = {
 
 export const LINKS = {
   linkedin: "https://www.linkedin.com/in/walter-c-0731bb209/",
-  syllixOne: "https://syllix-one.com",
-  stratedgeLearn: "https://stratedgelearn.site",
+  syllixOne: "https://www.syllix-one.com",
+  stratedgeLearn: "https://www.stratedgelearn.site",
   stratedgeWorks: "https://sites.google.com/view/stratedgelearn/published-works",
   amazonStore: "https://www.amazon.com/s?k=stratedge+publishing",
   snapplifyStore: "https://shop.snapplify.com/search?term=STRATEDGE",
@@ -117,7 +117,7 @@ export const EXPERIENCE = [
     company: "StratedgeAI",
     period: "2024 – Present",
     location: "Harare, Zimbabwe",
-    description: "Multimodal, agentic EdTech, DigiHealth, and SME business platforms for inclusive classrooms, culturally-aligned mental health and contextually-aware supply chain tooling  in Southern Africa.",
+    description: "Multimodal, agentic EdTech, DigiHealth, and SME business platforms for inclusive classrooms, culturally-aligned mental health and contextually-aware supply chain tooling  in Southern Africa. Verified Digital Instructor & Content Developer on learning platform Snapplify Teacha! where I have designed self-paced digital courses on AI literacy and disability-inclusive education. Curate 1-on-1 and organisational bespoke Applied AI training. Maintain AI Literacy outreach through Stratedgeai YouTube channel  ",
     },
   {
     title: "Business Development Consultant",

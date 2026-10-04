@@ -39,7 +39,7 @@ export default function Experience() {
                   <>
                     <a href="https://syllix-one.com" target="_blank" rel="noreferrer" className="hover:underline decoration-gold/50">Syllix-One</a>
                     {" / "}
-                    <a href="https://stratedgelearn.com" target="_blank" rel="noreferrer" className="hover:underline decoration-gold/50">Stratedge Learning</a>
+                    <a href="https://stratedgelearn.site" target="_blank" rel="noreferrer" className="hover:underline decoration-gold/50">Stratedge Learning</a>
                     {" & "}
                     <a href="https://sites.google.com/view/stratedgelearn/published-works" target="_blank" rel="noreferrer" className="hover:underline decoration-gold/50">Publishing</a>
                   </>

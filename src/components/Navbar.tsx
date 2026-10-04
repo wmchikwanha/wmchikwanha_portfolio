@@ -115,12 +115,8 @@ export default function Navbar() {
   };
 
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-        isScrolled ? "bg-navy-glass py-2.5 shadow-2xl backdrop-blur-md" : "bg-navy/95 lg:bg-transparent py-3 lg:py-6"
-      }`}
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 border-b border-gold/30 pb-2.5 lg:pb-3 flex justify-between items-center lg:items-end">
+    <nav className="fixed top-0 left-0 right-0 z-40 bg-navy-dark/95 backdrop-blur-md py-3 shadow-xl border-b border-gold/25 transition-colors duration-200">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center lg:items-end">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}

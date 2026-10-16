@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import { PERSONAL_INFO, LINKS } from "../constants";
 
 export default function About() {
   return (
@@ -46,14 +47,28 @@ export default function About() {
             Experienced in offline-first architecture, multilingual NLP, grant-ready impact measurement, and culturally adaptive instructional design. Postgraduate-qualified across education, mental health, and counselling from leading Australian universities.
           </p>
           
-          <div className="grid grid-cols-2 gap-8 pt-8">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 pt-8 items-start border-t border-gold/15 mt-8">
             <div>
-              <h4 className="text-gold font-bold text-3xl mb-1">15+</h4>
-              <p className="text-xs uppercase tracking-widest opacity-60">Published Books</p>
+              <h4 className="text-gold font-bold text-3xl mb-1">25+</h4>
+              <p className="text-xs uppercase tracking-widest opacity-60">Published Volumes</p>
             </div>
             <div>
               <h4 className="text-gold font-bold text-3xl mb-1">6+</h4>
-              <p className="text-xs uppercase tracking-widest opacity-60">AI-Augmented Platforms Built</p>
+              <p className="text-xs uppercase tracking-widest opacity-60">AI Platforms Built</p>
+            </div>
+            <div className="col-span-2 sm:col-span-1">
+              <a 
+                href={LINKS.orcid}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex flex-col group p-2.5 rounded-lg border border-[#a6ce39]/30 bg-[#a6ce39]/5 hover:bg-[#a6ce39]/15 hover:border-[#a6ce39]/60 transition-all"
+              >
+                <span className="text-[10px] uppercase font-bold tracking-widest text-[#a6ce39] flex items-center gap-1.5 mb-1">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#a6ce39]"></span>
+                  ORCID Profile ↗
+                </span>
+                <span className="text-xs font-mono text-ivory/80 group-hover:text-gold transition-colors">{PERSONAL_INFO.orcidId}</span>
+              </a>
             </div>
           </div>
         </motion.div>

@@ -12,6 +12,8 @@ export const PERSONAL_INFO = {
   location: "Harare, Zimbabwe",
   tagline: "Consultant • Author • AI Strategist • Founder",
   bio: "Pioneering AI literacy and digital solutions through strategic consulting. Architect of Syllix-One and Stratedge Publishing, bridging the gap between emerging technology and neuro-divergent inclusivity.",
+  orcid: "https://orcid.org/0000-0002-1822-2168",
+  orcidId: "0000-0002-1822-2168",
   heroSubheadline: "I develop borderless, digital interventions that bypass institutional barriers to deliver better, faster, and safer outcomes in EdTech and health technology, deploying lean, bespoke frameworks to equalise access for neurodiverse learners and assist in clinical decision-making professionals.",
   heroHeadline: {
     line1: "STRATEGIC.",
@@ -22,6 +24,7 @@ export const PERSONAL_INFO = {
 
 export const LINKS = {
   linkedin: "https://www.linkedin.com/in/walter-c-0731bb209/",
+  orcid: "https://orcid.org/0000-0002-1822-2168",
   syllixOne: "https://www.syllix-one.com",
   stratedgeLearn: "https://www.stratedgelearn.site",
   stratedgeWorks: "https://sites.google.com/view/stratedgelearn/published-works",
@@ -30,7 +33,8 @@ export const LINKS = {
   africanBooksCollective: "https://africanbookscollective.com/contributor/walter-c/",
   appleBooks: "https://books.apple.com/us/author/walt-m-chikwanha/id1831484115",
   barnesAndNoble: "https://www.barnesandnoble.com/s/%22Stratedge%20Academy%20Authors%22?Ntk=P_key_Contributor_List&Ns=P_Sales_Rank&Ntx=mode+matchall",
-  teachaCourses: "https://teachainspire.com/instructor/waltcstratedge-co-zw/"
+  teachaCourses: "https://teachainspire.com/instructor/waltcstratedge-co-zw/",
+  sameBasisZim: "https://same-basis-edu-zim.lovable.app/"
 };
 
 /**
@@ -42,6 +46,18 @@ export const LINKS = {
 export const HERO_IMAGE = "https://lh3.googleusercontent.com/u/0/d/15cUukhQGwBGyxnXOmHOgAFmALLPLCs4f";
 
 export const PLATFORMS = [
+  {
+    name: "SameBasisZIM",
+    type: "Inclusive EduTech",
+    description: "An inclusive teaching decision-support tool for Zimbabwean classrooms. It evaluates the whole child—including disability, home language, culture, and strengths—to recommend a practical, tailored adjustment for your very next lesson.",
+    link: "https://same-basis-edu-zim.lovable.app/"
+  },
+  {
+    name: "KudzidzisAI",
+    type: "Tertiary EduTech",
+    description: "Redesign tertiary assessments for the AI era. Transform questions into three defensible variants (AI-Assisted, Limited, Resistant) and generate formal Faculty AI Governance Logs.",
+    link: "https://ai-exam-adapt.lovable.app"
+  },
   {
     name: "TandemLearn",
     type: "Inclusive EdTech",
@@ -55,34 +71,16 @@ export const PLATFORMS = [
     link: "https://Nzwisiso-v5.lovable.app"
   },
   {
-    name: "LexAfrika AI",
-    type: "LegalTech",
-    description: "Legal intelligence tool turning statute, customary law and regional human-rights instruments into actionable, verifiable guidance for African citizens.",
-    link: "https://lexafrika-legal-ie.lovable.app"
-  },
-  {
-    name: "Ubuntu Cross Border",
-    type: "TradeTech",
-    description: "SADC trade facilitation tool designed to simplify cross-border logistics and customs documentation.",
-    link: "https://preview--border-trade-s.lovable.app/auth/login"
-  },
-  {
     name: "StratedgeOS ERP",
     type: "Enterprise Resource Planning",
     description: "An all-in-one ERP delivering enterprise-grade functionality that unifies CRM, finance, HR, procurement, project operations, and analytics.",
     link: "https://erp-os-project.lovable.app"
   },
   {
-    name: "Tengesa4Profit",
-    type: "MicroFinTech",
-    description: "Financial management and profitability tool for small business owners and micro-entrepreneurs.",
-    link: "https://tengesa-4-profit.lovable.app"
-  },
-  {
-    name: "KudzidzisAI",
-    type: "Tertiary EduTech",
-    description: "Redesign tertiary assessments for the AI era. Transform questions into three defensible variants (AI-Assisted, Limited, Resistant) and generate formal Faculty AI Governance Logs.",
-    link: "https://ai-exam-adapt.lovable.app"
+    name: "LexAfrika AI",
+    type: "LegalTech",
+    description: "Legal intelligence tool turning statute, customary law and regional human-rights instruments into actionable, verifiable guidance for African citizens.",
+    link: "https://lexafrika-legal-ie.lovable.app"
   }
 ];
 
@@ -110,7 +108,7 @@ export const EXPERIENCE = [
     company: "Syllix-One / Stratedge Learning & Publishing",
     period: "Dec 2024 – Present",
     location: "Harare, Zimbabwe",
-    description: "Delivering AI platforms and digital transformation advisory. Built 6+ production-ready platforms including Nzwisiso, TandemLearn, KudzidzisAI, LexAfrika AI, and Ubuntu Cross Border.",
+    description: "Delivering AI platforms and digital transformation advisory. Built production-ready AI platforms including SameBasisZIM, KudzidzisAI, TandemLearn, Nzwisiso, StratedgeOS ERP, and LexAfrika AI.",
   },
   {
     title: "Originator & Developer",

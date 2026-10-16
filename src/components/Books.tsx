@@ -41,8 +41,11 @@ export default function Books() {
             <a href={LINKS.barnesAndNoble} target="_blank" className="text-xs text-gold font-bold uppercase tracking-widest border-b border-gold pb-1 hover:opacity-70 transition-opacity whitespace-nowrap">
               Barnes & Noble →
             </a>
-            <a href={LINKS.teachaCourses} target="_blank" className="text-xs text-gold font-bold uppercase tracking-widest border-b border-gold pb-1 hover:opacity-70 transition-opacity">
+            <a href={LINKS.teachaCourses} target="_blank" rel="noreferrer" className="text-xs text-gold font-bold uppercase tracking-widest border-b border-gold pb-1 hover:opacity-70 transition-opacity">
               Teacha! Courses →
+            </a>
+            <a href={LINKS.orcid} target="_blank" rel="noreferrer" className="text-xs text-[#a6ce39] font-bold uppercase tracking-widest border-b border-[#a6ce39]/60 pb-1 hover:opacity-80 transition-opacity flex items-center gap-1.5">
+              <span>ORCID Record (0000-0002-1822-2168) →</span>
             </a>
           </div>
         </div>

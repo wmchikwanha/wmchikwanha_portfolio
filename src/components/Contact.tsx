@@ -75,9 +75,30 @@ export default function Contact() {
                 <a 
                   href={LINKS.linkedin} 
                   target="_blank" 
+                  rel="noreferrer"
                   className="text-ivory/80 font-light hover:text-gold transition-colors"
                 >
                   {PERSONAL_INFO.name}
+                </a>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-6">
+              <div className="w-12 h-12 bg-navy flex items-center justify-center rounded-xl text-[#a6ce39] border border-[#a6ce39]/30">
+                <svg className="w-5 h-5 fill-current" viewBox="0 0 256 256">
+                  <path d="M128 0a128 128 0 1 0 128 128A128 128 0 0 0 128 0zm-38.3 194.2H65V74.9h24.7zm-12.3-132a14.7 14.7 0 1 1 14.7-14.7 14.7 14.7 0 0 1-14.7 14.7zm116.8 77.2c0 30.5-20.2 55.4-56.9 55.4h-35.7V74.9h37.5c34.9 0 55.1 23.9 55.1 54.9zm-26.6.2c0-20.1-12.7-34.8-33.1-34.8h-12.3v69.6h12.3c20.7 0 33.1-14.7 33.1-34.8z"/>
+                </svg>
+              </div>
+              <div>
+                <h4 className="text-sm font-bold uppercase tracking-widest text-gold mb-1">ORCID iD</h4>
+                <a 
+                  href={LINKS.orcid} 
+                  target="_blank" 
+                  rel="noreferrer"
+                  className="text-ivory/80 font-light hover:text-[#a6ce39] transition-colors flex items-center gap-1.5"
+                >
+                  <span>{PERSONAL_INFO.orcidId}</span>
+                  <span className="text-[10px] text-gold/70">↗</span>
                 </a>
               </div>
             </div>

@@ -94,7 +94,7 @@ export default function Hero() {
             >
               Explore Solutions
             </a>
-            <div className="flex items-center gap-2">
+            <div className="flex flex-wrap items-center gap-2">
               <a 
                 href={LINKS.linkedin} 
                 target="_blank" 
@@ -102,6 +102,16 @@ export default function Hero() {
                 className="px-4 py-3.5 md:py-4 border border-gold/30 rounded-sm hover:bg-gold/10 transition-all text-xs font-bold uppercase tracking-widest text-center"
               >
                 LinkedIn
+              </a>
+              <a 
+                href={LINKS.orcid} 
+                target="_blank" 
+                rel="noreferrer"
+                title="ORCID Researcher iD"
+                className="px-4 py-3.5 md:py-4 border border-[#a6ce39]/60 bg-[#a6ce39]/10 text-ivory hover:bg-[#a6ce39]/20 transition-all text-xs font-bold uppercase tracking-widest text-center flex items-center gap-1.5"
+              >
+                <span className="w-2 h-2 rounded-full bg-[#a6ce39] inline-block"></span>
+                ORCID
               </a>
               <a 
                 href={LINKS.syllixOne} 

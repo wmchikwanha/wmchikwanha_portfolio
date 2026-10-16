@@ -51,12 +51,20 @@ export default function Platforms() {
                 <div className="w-12 h-12 bg-gold/10 border border-gold/20 shrink-0 flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-navy transition-all duration-500 font-bold">
                   0{idx + 1}
                 </div>
-                <div>
-                  <p className="text-sm font-bold tracking-tight mb-1">{app.name}</p>
+                <div className="flex-1">
+                  <div className="flex items-center justify-between gap-2 mb-1">
+                    <p className="text-sm font-bold tracking-tight">{app.name}</p>
+                    {app.type && (
+                      <span className="text-[9px] uppercase tracking-wider text-gold/80 font-mono px-1.5 py-0.5 bg-gold/10 border border-gold/20">
+                        {app.type}
+                      </span>
+                    )}
+                  </div>
                   <p className="text-[11px] opacity-60 leading-normal mb-3">{app.description}</p>
                   <a 
                     href={app.link} 
-                    target="_blank"
+                    target="_blank" 
+                    rel="noreferrer"
                     className="text-[10px] font-bold text-gold uppercase tracking-widest flex items-center gap-1 opacity-70 md:opacity-0 md:group-hover:opacity-100 transition-opacity"
                   >
                     View <ExternalLink size={10} />

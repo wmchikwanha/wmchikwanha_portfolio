@@ -22,13 +22,40 @@ export default function Footer() {
         </div>
 
         <div className="flex gap-4">
-          <a href={LINKS.linkedin} target="_blank" className="w-10 h-10 border border-gold/20 rounded-full flex items-center justify-center text-gold hover:bg-gold hover:text-navy transition-all">
+          <a 
+            href={LINKS.linkedin} 
+            target="_blank" 
+            rel="noreferrer"
+            title="LinkedIn Profile"
+            className="w-10 h-10 border border-gold/20 rounded-full flex items-center justify-center text-gold hover:bg-gold hover:text-navy transition-all"
+          >
             <Linkedin size={18} />
           </a>
-          <a href={LINKS.syllixOne} target="_blank" className="w-10 h-10 border border-gold/20 rounded-full flex items-center justify-center text-gold hover:bg-gold hover:text-navy transition-all">
+          <a 
+            href={LINKS.orcid} 
+            target="_blank" 
+            rel="noreferrer"
+            title="ORCID Record: 0000-0002-1822-2168"
+            className="w-10 h-10 border border-[#a6ce39]/40 rounded-full flex items-center justify-center text-[#a6ce39] hover:bg-[#a6ce39] hover:text-navy transition-all"
+          >
+            <svg className="w-4 h-4 fill-current" viewBox="0 0 256 256">
+              <path d="M128 0a128 128 0 1 0 128 128A128 128 0 0 0 128 0zm-38.3 194.2H65V74.9h24.7zm-12.3-132a14.7 14.7 0 1 1 14.7-14.7 14.7 14.7 0 0 1-14.7 14.7zm116.8 77.2c0 30.5-20.2 55.4-56.9 55.4h-35.7V74.9h37.5c34.9 0 55.1 23.9 55.1 54.9zm-26.6.2c0-20.1-12.7-34.8-33.1-34.8h-12.3v69.6h12.3c20.7 0 33.1-14.7 33.1-34.8z"/>
+            </svg>
+          </a>
+          <a 
+            href={LINKS.syllixOne} 
+            target="_blank" 
+            rel="noreferrer"
+            title="Syllix-One Website"
+            className="w-10 h-10 border border-gold/20 rounded-full flex items-center justify-center text-gold hover:bg-gold hover:text-navy transition-all"
+          >
             <Globe size={18} />
           </a>
-          <a href={`mailto:${PERSONAL_INFO.email}`} className="w-10 h-10 border border-gold/20 rounded-full flex items-center justify-center text-gold hover:bg-gold hover:text-navy transition-all">
+          <a 
+            href={`mailto:${PERSONAL_INFO.email}`} 
+            title="Send Email"
+            className="w-10 h-10 border border-gold/20 rounded-full flex items-center justify-center text-gold hover:bg-gold hover:text-navy transition-all"
+          >
             <Mail size={18} />
           </a>
         </div>

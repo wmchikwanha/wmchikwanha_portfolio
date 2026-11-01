@@ -56,7 +56,7 @@ export const PLATFORMS = [
     name: "KudzidzisAI",
     type: "Tertiary EduTech",
     description: "Redesign tertiary assessments for the AI era. Transform questions into three defensible variants (AI-Assisted, Limited, Resistant) and generate formal Faculty AI Governance Logs.",
-    link: "https://ai-exam-adapt.lovable.app"
+    link: "https://kudzidzis-ai.lovable.app"
   },
   {
     name: "TandemLearn",

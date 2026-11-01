@@ -1,7 +1,7 @@
 name: Deploy to GitHub Pages
 on:
   push:
-    branches: [hark-revamp]
+    branches: [main, hark-revamp]
   workflow_dispatch:
 permissions:
   contents: read

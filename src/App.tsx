@@ -103,7 +103,7 @@ export default function App() {
               AI that meets people <em className="text-clay">where they are.</em>
             </h1>
             <p className="mt-5 max-w-xl text-lg leading-relaxed text-ink/70">
-              I design lean, human-in-the-loop AI tools for education and health in Africa and Australia, built for neurodiverse learners, under-resourced classrooms and busy clinicians.
+              I design lean, human-in-the-loop AI tools for education and health in Africa, built for neurodiverse learners, under-resourced classrooms and busy clinicians.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
               <a href="#platforms" className="inline-flex items-center gap-2 rounded-full bg-ink px-5 py-3 text-sm font-medium text-paper transition hover:bg-clay">
@@ -256,7 +256,7 @@ export default function App() {
                 <a key={e} href={`mailto:${e}`} className="flex items-center gap-3 rounded-xl bg-paper/10 px-4 py-3 transition hover:bg-paper/20"><Mail size={18} />{e}</a>
               ))}
               <a href={`tel:${PERSONAL_INFO.phone.replace(/\s/g, "")}`} className="flex items-center gap-3 rounded-xl bg-paper/10 px-4 py-3 transition hover:bg-paper/20"><Phone size={18} />{PERSONAL_INFO.phone}</a>
-              <p className="flex items-center gap-3 px-4 py-2 text-paper/80"><MapPin size={18} />{PERSONAL_INFO.location} · working across Africa & Australia</p>
+              <p className="flex items-center gap-3 px-4 py-2 text-paper/80"><MapPin size={18} />{PERSONAL_INFO.location} · working across Africa</p>
             </div>
           </div>
         </section>

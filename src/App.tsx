@@ -105,12 +105,15 @@ export default function App() {
             <p className="mt-5 max-w-xl text-lg leading-relaxed text-ink/70">
               I design lean, human-in-the-loop AI tools for education and health in Africa, built for neurodiverse learners, under-resourced classrooms and busy clinicians.
             </p>
-            <div className="mt-7 flex flex-wrap gap-3">
-              <a href="#platforms" className="inline-flex items-center gap-2 rounded-full bg-ink px-5 py-3 text-sm font-medium text-paper transition hover:bg-clay">
-                See the platforms <ArrowUpRight size={16} />
+            <div className="mt-7 flex flex-nowrap items-center gap-2 sm:gap-3">
+              <a href="#platforms" className="inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full bg-ink px-3 py-2.5 text-xs font-medium text-paper transition hover:bg-clay sm:gap-2 sm:px-5 sm:py-3 sm:text-sm">
+                See the platforms <ArrowUpRight size={14} />
               </a>
-              <a href={LINKS.orcid} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-ink/20 px-5 py-3 text-sm font-medium transition hover:border-clay hover:text-clay">
-                ORCID {PERSONAL_INFO.orcidId}
+              <a href={LINKS.orcid} target="_blank" rel="noreferrer" className="inline-flex shrink-0 items-center gap-1 whitespace-nowrap rounded-full border border-ink/20 px-3 py-2.5 text-xs font-medium transition hover:border-clay hover:text-clay sm:px-5 sm:py-3 sm:text-sm">
+                ORCID<span className="hidden sm:inline"> {PERSONAL_INFO.orcidId}</span>
+              </a>
+              <a href={LINKS.googleScholar} target="_blank" rel="noreferrer" className="inline-flex shrink-0 items-center whitespace-nowrap rounded-full border border-ink/20 px-3 py-2.5 text-xs font-medium transition hover:border-clay hover:text-clay sm:px-5 sm:py-3 sm:text-sm">
+                Google Scholar
               </a>
             </div>
             <dl className="mt-10 grid max-w-md grid-cols-3 gap-4 border-t border-ink/10 pt-6">
@@ -268,6 +271,7 @@ export default function App() {
           <a href={LINKS.syllixOne} target="_blank" rel="noreferrer" className="hover:text-clay">Syllix-One</a>
           <a href={LINKS.stratedgeLearn} target="_blank" rel="noreferrer" className="hover:text-clay">Stratedge</a>
           <a href={LINKS.orcid} target="_blank" rel="noreferrer" className="hover:text-clay">ORCID</a>
+          <a href={LINKS.googleScholar} target="_blank" rel="noreferrer" className="hover:text-clay">Google Scholar</a>
           <a href="https://github.com/wmchikwanha" target="_blank" rel="noreferrer" className="hover:text-clay">GitHub</a>
         </div>
       </footer>

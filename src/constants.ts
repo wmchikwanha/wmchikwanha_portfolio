@@ -25,6 +25,7 @@ export const PERSONAL_INFO = {
 export const LINKS = {
   linkedin: "https://www.linkedin.com/in/walter-c-0731bb209/",
   orcid: "https://orcid.org/0000-0002-1822-2168",
+  googleScholar: "https://scholar.google.com/citations?user=1QdNLCEAAAAJ&hl=en",
   syllixOne: "https://www.syllix-one.com",
   stratedgeLearn: "https://www.stratedgelearn.site",
   stratedgeWorks: "https://sites.google.com/view/stratedgelearn/published-works",

@@ -30,6 +30,7 @@ const CERTS = [
   "Trustworthy AI for Healthcare · Politecnico di Milano",
   "AI for Education · Kennesaw State University",
   "Ethics of AI · University of Helsinki",
+  "AI: Ethics & Societal Challenges · Lund University",
 ];
 
 const TOOLS = ["Claude", "OpenAI", "Gemini", "Google AI Studio", "Lovable", "React / TypeScript", "Supabase", "Offline-first PWAs", "Web Speech & WebRTC", "Instructional design", "Grant writing", "NVivo"];

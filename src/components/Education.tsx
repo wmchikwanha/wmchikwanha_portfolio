@@ -34,6 +34,7 @@ const certs = [
   { title: "AI for Education (Intermediate)", issuer: "Kennesaw State University" },
   { title: "Trustworthy AI for Healthcare", issuer: "Politecnico di Milano" },
   { title: "Ethics of AI", issuer: "University of Helsinki" },
+  { title: "AI: Ethics & Societal Challenges", issuer: "Lund University" },
   { title: "Build & Execute AI Strategy", issuer: "Coursera Network" }
 ];
 

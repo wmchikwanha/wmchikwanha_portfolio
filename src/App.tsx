@@ -21,6 +21,7 @@ const EDUCATION = [
   { degree: "Graduate Certificate of Counselling", school: "Monash University", year: "2023" },
   { degree: "Master of Mental Health", school: "Southern Cross University", year: "2022" },
   { degree: "Master of Education (eLearning)", school: "University of New England", year: "2018" },
+  { degree: "Graduate Certificate of Tertiary Teaching", school: "Curtin University", year: "2015" },
   { degree: "BSc Economics", school: "University of Zimbabwe", year: "1995" },
 ];
 

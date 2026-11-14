@@ -13,6 +13,11 @@ const education = [
     year: "2018"
   },
   {
+    degree: "Graduate Certificate of Tertiary Teaching",
+    school: "Curtin University, Australia",
+    year: "2015"
+  },
+  {
     degree: "Graduate Certificate of Counselling",
     school: "Monash University, Australia",
     year: "2023"
